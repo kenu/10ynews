@@ -20,7 +20,8 @@ sudo amazon-linux-extras install -y nginx1.12
 sudo systemctl enable nginx
 
 sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
-sudo sh -c "sed '13,17d' /etc/nginx/nginx.conf.orig > /etc/nginx/nginx.conf"
+sudo sh -c "sed '38,87d' /etc/nginx/nginx.conf.orig > /etc/nginx/nginx.conf"
 sudo curl https://raw.githubusercontent.com/kenu/10ynews/main/10ynews/sh/10ynews.conf -O /etc/nginx/conf.d/10ynews.conf
+sleep 2
 sudo systemctl start nginx
 

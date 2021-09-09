@@ -12,3 +12,6 @@ npm start
 
 ## License
 * [MIT](https://github.com/kenu/10ynews/blob/main/LICENSE)
+
+
+curl -L https://raw.githubusercontent.com/kenu/10ynews/main/sh/install-env.sh | sh
