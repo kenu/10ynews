@@ -10,6 +10,9 @@ sudo npm i -g pm2
 mkdir ~/git
 cd ~/git
 git clone $REPO
+cp ~/git/10ynews/sh/deploy-10ynews.sh ~
+chmod +x ~/deploy-10ynews.sh
+
 cd 10ynews/web
 npm install --only=production
 pm2 start bin/10ynews

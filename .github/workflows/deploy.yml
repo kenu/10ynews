@@ -19,7 +19,7 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          ./git/10ynews/sh/deploy-10ynews.sh
+          ./deploy-10ynews.sh
 #  build-dev:
 #    name: deploy-dev
 #    runs-on: ubuntu-latest
@@ -33,4 +33,4 @@ jobs:
 #        key: ${{ secrets.KEY }}
 #        port: ${{ secrets.PORT }}
 #        script: |
-#          ./git/10ynews/sh/deploy-10ynews-dev.sh
+#          ./deploy-10ynews-dev.sh
