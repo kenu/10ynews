@@ -1,16 +1,10 @@
 #!/bin/sh
-HOME=/home/dev
-source $HOME/.zshrc
 
-git pull;
-
-SRC=.
-DEST=$HOME/local/10ynews
-
-cp -rf $SRC/* $DEST
-
+source $HOME/.bash_profile
+DEST=/home/ec2-user/git/10ynews
 cd $DEST/web
-npm install
+git pull
+npm install --only=production
 
 pm2 restart 10ynews
 
