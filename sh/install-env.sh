@@ -11,7 +11,7 @@ mkdir ~/git
 cd ~/git
 git clone $REPO
 cd 10ynews/web
-npm install
+npm install --only=production
 pm2 start bin/10ynews
 sleep 2
 pm2 list
