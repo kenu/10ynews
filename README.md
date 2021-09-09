@@ -13,5 +13,8 @@ npm start
 ## License
 * [MIT](https://github.com/kenu/10ynews/blob/main/LICENSE)
 
-
-curl -L https://raw.githubusercontent.com/kenu/10ynews/main/sh/install-env.sh | sh
+## EC2 install
+* AMI Linux 2 instance with 80 port open in Security Group
+* First install env with git, node.js16, nginx
+* `curl -L https://raw.githubusercontent.com/kenu/10ynews/main/sh/install-env.sh | sh`
+* Open instance public ip in browser
