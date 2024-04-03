@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p><b>역사를 잊은 민족에게 미래는 없다</b> - 단재 신채호</p>
-    <div>
-      <a href="https://www.google.com/search?q=<%= news.query %>" target="_blank">
-        <%= news.today %>
-      </a>
-      <nav><a href="https://okdevtv.com">okdevtv</a> |
-        <a href="https://github.com/kenu/10ynews">GitHub</a> |
-        <a href="https://okky.kr">okky</a>        
-      </nav> |
-    </div>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p><b>역사를 잊은 민족에게 미래는 없다</b></p>
+  <div>
+    <a href="https://www.google.com/search?q=<%= news.query %>" target="_blank">
+      <%= news.today %>
+    </a>
+    <nav><a href="https://okdevtv.com">okdevtv</a> |
+      <a href="https://github.com/kenu/10ynews">GitHub</a> |
+      <a href="https://okky.kr">okky</a>
+    </nav> |
+  </div>
+</body>
+
 </html>
