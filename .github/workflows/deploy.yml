@@ -19,18 +19,4 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          ./deploy-10ynews.sh
-#  build-dev:
-#    name: deploy-dev
-#    runs-on: ubuntu-latest
-#    if: github.ref == 'refs/heads/develop'
-#    steps:
-#    - name: executing remote ssh commands using key
-#      uses: appleboy/ssh-action@master
-#      with:
-#        host: ${{ secrets.HOST }}
-#        username: ${{ secrets.USERNAME }}
-#        key: ${{ secrets.KEY }}
-#        port: ${{ secrets.PORT }}
-#        script: |
-#          ./deploy-10ynews-dev.sh
+          ./scripts/deploy-10y.sh
